@@ -4,7 +4,7 @@ What original `$ cdk init --language=typescript` command provides you is.... not
 As a professional TypeScript developer, I felt obligated to do something good to this world, so I made this repository!
 
 ## How to use
-Click the green button to create new repository from this one!
+Click the green button to create a new repository from this one!
 
 ![Use as template](./use_as_template.png)
 
