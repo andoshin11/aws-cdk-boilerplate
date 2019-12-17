@@ -4,6 +4,9 @@ What original `$ cdk init --language=typescript` command provides you is.... not
 As a professional TypeScript developer, I felt obligated to do something good to this world, so I made this repository!
 
 ## How to use
+Click the green button to create new repository from this one!
+
+![Use as template](./use_as_template.png)
 
 ## Quick look repository structure
 
@@ -56,4 +59,8 @@ This may be the most controversial one.
 However, it all comes down to this simple question.
 
 > Should I ever need to snapshot-test IaC code-base?
+
+The choice is yours.
+
+(Just keep in mind that original test code is totally pointless, so setup your own test structure from wh scratch even if you are the one with the necessity :smile:)
 
