@@ -1,14 +1,47 @@
-# Welcome to your CDK TypeScript project!
+## Quick look repository structure
 
-This is a blank project for TypeScript development with CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```
+.
+├── README.md
+├── bin
+│   └── cdk-boilerplate.js
+├── cdk.context.json
+├── cdk.json
+├── cdk.out
+│   ├── SampleStack.template.json
+│   ├── cdk.out
+│   ├── manifest.json
+│   └── tree.json
+├── lib
+│   ├── bin
+│   │   ├── cdk-boilerplate.d.ts
+│   │   └── cdk-boilerplate.js
+│   ├── const
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── stacks.d.ts
+│   │   └── stacks.js
+│   └── stacks
+│       ├── base.d.ts
+│       ├── base.js
+│       ├── index.d.ts
+│       ├── index.js
+│       ├── sample.d.ts
+│       └── sample.js
+├── package-lock.json
+├── package.json
+├── src
+│   ├── bin
+│   │   └── cdk-boilerplate.ts
+│   ├── const
+│   │   ├── index.ts
+│   │   └── stacks.ts
+│   └── stacks
+│       ├── base.ts
+│       ├── index.ts
+│       └── sample.ts
+└── tsconfig.json
 
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+10 directories, 29 files
+```
