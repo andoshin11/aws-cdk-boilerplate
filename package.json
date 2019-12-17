@@ -8,6 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test:type": "tsc --noEmit",
+    "deploy": "npm run build && cdk deploy",
+    "destroy": "npm run build && cdk destroy",
     "synth": "npm run build && cdk synth > template.yml",
     "list": "npm run build && cdk list"
   },
