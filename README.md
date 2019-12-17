@@ -62,5 +62,5 @@ However, it all comes down to this simple question.
 
 The choice is yours.
 
-(Just keep in mind that original test code is totally pointless, so setup your own test structure from wh scratch even if you are the one with the necessity :smile:)
+(Just keep in mind that original test code is totally pointless, so setup your own test structure from the scratch even if you are the one with the necessity!)
 
