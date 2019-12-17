@@ -8,6 +8,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test:type": "tsc --noEmit",
+    "synth": "npm run build && cdk synth > template.yml",
     "list": "npm run build && cdk list"
   },
   "devDependencies": {
