@@ -1,5 +1,7 @@
 ## Quick look repository structure
 
+<details><summary>CLICK ME</summary>
+<p>
 
 ```
 .
@@ -45,3 +47,6 @@
 
 10 directories, 29 files
 ```
+
+</p>
+</details>
