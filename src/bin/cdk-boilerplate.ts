@@ -1,6 +1,8 @@
 import 'source-map-support/register';
 import cdk = require('@aws-cdk/core');
-import { CdkBoilerplateStack } from '../cdk-boilerplate-stack';
+import * as stacks from '../stacks'
 
 const app = new cdk.App();
-new CdkBoilerplateStack(app, 'CdkBoilerplateStack');
+
+// Init stacks
+new stacks.SampleStack(app)
