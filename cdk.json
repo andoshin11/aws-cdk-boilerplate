@@ -1,6 +1,3 @@
 {
-  "app": "npx ts-node bin/cdk-boilerplate.ts",
-  "context": {
-    "@aws-cdk/core:enableStackNameDuplicates": "true"
-  }
+  "app": "node bin/cdk-boilerplate.js"
 }
