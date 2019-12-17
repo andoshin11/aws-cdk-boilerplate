@@ -1,7 +1,11 @@
-## Quick look repository structure
+# About repository
+What original `$ cdk init --language=typescript` command provides you is.... nothing more than tragedy. :disappointed:
 
-<details><summary>CLICK ME</summary>
-<p>
+As a professional TypeScript developer, I felt obligated to do something good to this world, so I made this repository!
+
+## How to use
+
+## Quick look repository structure
 
 ```
 .
@@ -10,27 +14,6 @@
 │   └── cdk-boilerplate.js
 ├── cdk.context.json
 ├── cdk.json
-├── cdk.out
-│   ├── SampleStack.template.json
-│   ├── cdk.out
-│   ├── manifest.json
-│   └── tree.json
-├── lib
-│   ├── bin
-│   │   ├── cdk-boilerplate.d.ts
-│   │   └── cdk-boilerplate.js
-│   ├── const
-│   │   ├── index.d.ts
-│   │   ├── index.js
-│   │   ├── stacks.d.ts
-│   │   └── stacks.js
-│   └── stacks
-│       ├── base.d.ts
-│       ├── base.js
-│       ├── index.d.ts
-│       ├── index.js
-│       ├── sample.d.ts
-│       └── sample.js
 ├── package-lock.json
 ├── package.json
 ├── src
@@ -45,8 +28,32 @@
 │       └── sample.ts
 └── tsconfig.json
 
-10 directories, 29 files
+5 directories, 13 files
 ```
 
-</p>
-</details>
+## What's diferrent from the original one?
+
+### Using `src` directory as a centrized code management directory
+Because why not?
+
+### Specifying `outDir` option inside `tsconfig.json`
+You should **never** git-ignore `*.js` or `*.d.ts` as a whole!
+
+I'd prefer a much elegant solution, which is isolating output directory and simply ignore that one alone. Simple!
+
+I also removed a few unnecessary options from `tsconfig.json` so please check them out as well.
+
+### Better `bin` management
+When your code entrypoint has (relatively) complex application logic, you should keep them inside `src` and keep anything outside `src` dir as dead-simple as possible.
+
+### Removing `ts-node`
+Why you need `ts-node` when your npm script already has a `build` command?
+
+No offence to the `ts-node` maintainers, however IMO I believe no production grade code-base should use `ts-node` as a runtime, unless you are 100% sure what `ts-node` is doing under the hood.
+
+### Droping test
+This may be the most controversial one.
+However, it all comes down to this simple question.
+
+> Should I ever need to snapshot-test IaC code-base?
+
